@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "appName": "Nile Waves",
+  "favorites": "Favorites",
+  "all": "All",
+  "newStations": "New Stations",
+  "searchHint": "Search stations...",
+  "nowPlaying": "Now Playing"
+}
