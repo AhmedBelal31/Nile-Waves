@@ -41,6 +41,7 @@ void main() async {
   // Initialize Hive
   await Hive.initFlutter();
   Hive.registerAdapter(StationModelAdapter());
+  await Hive.openBox('settings');
 
   // Init DI
   await di.init();

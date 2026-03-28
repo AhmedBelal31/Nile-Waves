@@ -5,5 +5,11 @@
   "all": "الكل",
   "newStations": "محطات جديدة",
   "searchHint": "ابحث عن المحطات...",
-  "nowPlaying": "يتم التشغيل الآن"
+  "nowPlaying": "يتم التشغيل الآن",
+  "hello": "مرحباً",
+  "listener": "مستمع",
+  "welcomeTo": "مرحباً بك في أمواج النيل",
+  "whatToCallYou": "بماذا نناديك؟",
+  "enterYourName": "أدخل اسمك...",
+  "letsGo": "هيا بنا!"
 }

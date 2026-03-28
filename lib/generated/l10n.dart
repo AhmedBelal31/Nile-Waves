@@ -109,6 +109,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Hello`
+  String get hello {
+    return Intl.message(
+      'Hello',
+      name: 'hello',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Listener`
+  String get listener {
+    return Intl.message(
+      'Listener',
+      name: 'listener',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Nile Waves`
+  String get welcomeTo {
+    return Intl.message(
+      'Welcome to Nile Waves',
+      name: 'welcomeTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What should we call you?`
+  String get whatToCallYou {
+    return Intl.message(
+      'What should we call you?',
+      name: 'whatToCallYou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your name...`
+  String get enterYourName {
+    return Intl.message(
+      'Enter your name...',
+      name: 'enterYourName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Let's Go!`
+  String get letsGo {
+    return Intl.message(
+      'Let\'s Go!',
+      name: 'letsGo',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

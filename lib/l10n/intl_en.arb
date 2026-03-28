@@ -5,5 +5,11 @@
   "all": "All",
   "newStations": "New Stations",
   "searchHint": "Search stations...",
-  "nowPlaying": "Now Playing"
+  "nowPlaying": "Now Playing",
+  "hello": "Hello",
+  "listener": "Listener",
+  "welcomeTo": "Welcome to Nile Waves",
+  "whatToCallYou": "What should we call you?",
+  "enterYourName": "Enter your name...",
+  "letsGo": "Let's Go!"
 }

@@ -24,9 +24,17 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "all": MessageLookupByLibrary.simpleMessage("الكل"),
         "appName": MessageLookupByLibrary.simpleMessage("أمواج النيل"),
+        "enterYourName": MessageLookupByLibrary.simpleMessage("أدخل اسمك..."),
         "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
+        "hello": MessageLookupByLibrary.simpleMessage("مرحباً"),
+        "letsGo": MessageLookupByLibrary.simpleMessage("هيا بنا!"),
+        "listener": MessageLookupByLibrary.simpleMessage("مستمع"),
         "newStations": MessageLookupByLibrary.simpleMessage("محطات جديدة"),
         "nowPlaying": MessageLookupByLibrary.simpleMessage("يتم التشغيل الآن"),
-        "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن المحطات...")
+        "searchHint":
+            MessageLookupByLibrary.simpleMessage("ابحث عن المحطات..."),
+        "welcomeTo":
+            MessageLookupByLibrary.simpleMessage("مرحباً بك في أمواج النيل"),
+        "whatToCallYou": MessageLookupByLibrary.simpleMessage("بماذا نناديك؟")
       };
 }
