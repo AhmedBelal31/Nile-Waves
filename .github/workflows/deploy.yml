@@ -33,9 +33,6 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Generate localization files
-        run: dart run intl_utils:generate
-
       - name: Build web
         run: flutter build web --release --base-href "/Nile-Waves/"
 
