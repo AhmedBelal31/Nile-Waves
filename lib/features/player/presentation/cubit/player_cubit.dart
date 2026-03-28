@@ -59,6 +59,7 @@ class PlayerCubit extends Cubit<PlayerState> {
     emit(state.copyWith(currentStation: station, queue: updatedQueue));
     try {
       final url = station.urlResolved.isNotEmpty ? station.urlResolved : station.url;
+      await audioPlayer.stop();
       await audioPlayer.setUrl(url);
       await audioPlayer.play();
 
