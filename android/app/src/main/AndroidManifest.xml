@@ -30,6 +30,36 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <!-- Medium Widget (4x1) -->
+        <receiver
+            android:name=".NileWavesWidgetProvider"
+            android:exported="true"
+            android:label="Nile Waves Player">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.abtech.nile_waves.ACTION_PLAY" />
+                <action android:name="com.abtech.nile_waves.ACTION_PAUSE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <!-- Small Widget (2x1) -->
+        <receiver
+            android:name=".NileWavesSmallWidgetProvider"
+            android:exported="true"
+            android:label="Nile Waves Mini">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.abtech.nile_waves.ACTION_PLAY" />
+                <action android:name="com.abtech.nile_waves.ACTION_PAUSE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_small" />
+        </receiver>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

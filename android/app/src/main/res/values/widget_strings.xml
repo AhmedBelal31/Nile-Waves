@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Control your radio playback from the home screen</string>
+    <string name="widget_description_small">Quick radio controls</string>
+    <string name="widget_now_playing">NOW PLAYING</string>
+    <string name="widget_no_station">Nile Waves</string>
+</resources>

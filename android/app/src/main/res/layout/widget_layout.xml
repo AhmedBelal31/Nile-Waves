@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Radio Icon -->
+    <ImageView
+        android:id="@+id/widget_radio_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_radio"
+        android:contentDescription="Radio" />
+
+    <!-- Station Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_now_playing_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOW PLAYING"
+            android:textColor="#8B8FA3"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/widget_station_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nile Waves"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Waveform Bars (simple 3-bar animation placeholder) -->
+    <LinearLayout
+        android:id="@+id/widget_waveform"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="2dp"
+            android:background="#FF3344" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:background="#FF3344" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="8dp"
+            android:layout_marginEnd="2dp"
+            android:background="#FF3344" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:background="#FF3344" />
+
+    </LinearLayout>
+
+    <!-- Play/Pause Button -->
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/widget_play_button_bg">
+
+        <ImageView
+            android:id="@+id/widget_play_pause_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play"
+            android:contentDescription="Play or Pause" />
+
+    </FrameLayout>
+
+</LinearLayout>
