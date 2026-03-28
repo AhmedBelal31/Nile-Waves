@@ -58,7 +58,7 @@ class _StationCardState extends State<StationCard> with SingleTickerProviderStat
               onTapDown: (_) => _animController.forward(),
               onTapUp: (_) => _animController.reverse(),
               onTapCancel: () => _animController.reverse(),
-              onDoubleTap: () {
+              onTap: () {
                 final stState = context.read<StationsCubit>().state;
                 List<Station> currentList = [widget.station];
                 if (stState is StationsLoaded) {
